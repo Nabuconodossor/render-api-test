@@ -8,7 +8,7 @@ const app = express();
 // --- CORS ---
 // Mientras conectas tu dominio .cl, dejamos abierto.
 // Luego reemplaza "*" por tu(s) dominio(s).
-app.use(cors({ origin: "*", methods: ["GET", "POST"] }));
+app.use(cors({ origin: ["https://gabrieldev-static.onrender.com"], methods:["GET","POST"] }));
 app.use(express.json());
 
 // --- DB ---
